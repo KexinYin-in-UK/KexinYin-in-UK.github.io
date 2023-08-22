@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Home</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-image: url("background.gif");
+      background-size: cover;
+    }
+
+    #header {
+      display: flex;
+      align-items: center;
+      justify-content: center; /* Add this line */
+      height: 100vh; /* Add this line */
+    }
+
+    #left-column {
+      flex: 2;
+      text-align: center;
+      padding: 0 20px;
+    }
+
+    #right-column {
+      flex: 3;
+      text-align: left;
+      font-size: 12pt;
+      padding: 0 20px;
+      display: flex; /* Add this line */
+      flex-direction: column; /* Add this line */
+      align-items: left; /* Add this line */
+      justify-content: left; /* Add this line */
+    }
+
+    #photo {
+      max-width: 100%;
+      border: 3px solid black;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      width: 70%;
+      height: auto;
+    }
+
+    #name {
+      font-size: 24pt;
+      font-weight: bold;
+      color: black;
+    }
+
+    #position {
+      font-size: 16pt;
+      margin-bottom: 20px;
+      color: black;
+    }
+
+    #abstract {
+      font-size: 14pt;
+      text-align: justify;
+      line-height: 1.8;
+      margin-bottom: 10px;
+      color: black;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    #email {
+      font-style: italic;
+      font-size: 14pt;
+      margin-bottom: 20px;
+      color: black;
+    }
+
+    #icons {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    #icons img {
+      margin: 5px;
+    }
+
+    #buttons {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    #buttons button {
+      margin: 5px;
+      font-size: 10pt;
+      padding: 10px 20px;
+    }
+  </style>
+</head>
+<body>
+  <div id="header">
+    <div id="left-column">
+      <img src="personal photo.JPG" id="photo" alt="Personal Photo">
+      <div id="icons">
+        <a href="https://twitter.com/KexinYin5"><img src="twitter.png" alt="Twitter Icon" width="30" height="30"></a>
+        <a href="https://www.linkedin.com/in/kexin-yin-in-uk"><img src="linkedin.png" alt="LinkedIn Icon" width="30" height="30"></a>
+	<a href="https://www.researchgate.net/profile/Kexin-Yin-7"><img src="researchgate.png" alt="Researchgate Icon" width="30" height="30"></a>
+        <a href="https://fmh.hud.ac.uk"><img src="future metrology hub.png" alt="Future Metrology Hub Icon" width="30" height="30"></a>
+        
+      </div>
+    </div>
+    <div id="right-column">
+      <p><strong> 05/2023</strong> Alan Turing Institute Data Study Group in topic modelling of literature trend for science and technology Team Member.</p>
+      <p><strong> 01/2022 - 08/2022</strong> Health condition monitoring for an astronomical telescope, Team Member.</p>
+      <p><strong> 07/2021 - 12/2021</strong> Photogrammetry with human-drone interaction, Team Leader </p>
+      <p><strong> 08/2020 - 06/2021</strong> Performance test of a CNC machine under heavy-duty operation, Team Leader</p>
+      <p><strong> 03/2019 - 08/2019</strong> Prototype test of a flexible medical drill robot, Team Member</p>
+      <p><strong>11/2018 - 12/2018</strong> Performance experiment of drilling tool with dynamometers, Team Leader</p>
+      <p><strong>02/2016 - 06/2016</strong> Exchange Program in Incheon National University, Korea, Exchange Student</p>
+
+      <div id="buttons">
+        <button onclick="location.href='/'">Go Back</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

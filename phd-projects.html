@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Home</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-image: url("background.gif");
+      background-size: cover;
+    }
+
+    #header {
+      display: flex;
+      align-items: center;
+      justify-content: center; /* Add this line */
+      height: 100vh; /* Add this line */
+    }
+
+    #left-column {
+      flex: 2;
+      text-align: center;
+      padding: 0 20px;
+    }
+
+    #right-column {
+      flex: 3;
+      text-align: left;
+      font-size: 14pt;
+      padding: 0 20px;
+      display: flex; /* Add this line */
+      flex-direction: column; /* Add this line */
+      align-items: left; /* Add this line */
+      justify-content: left; /* Add this line */
+    }
+
+    #photo {
+      max-width: 100%;
+      border: 3px solid black;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      width: 70%;
+      height: auto;
+    }
+
+    #name {
+      font-size: 24pt;
+      font-weight: bold;
+      color: black;
+    }
+
+    #position {
+      font-size: 16pt;
+      margin-bottom: 20px;
+      color: black;
+    }
+
+    #abstract {
+      font-size: 14pt;
+      text-align: justify;
+      line-height: 1.8;
+      margin-bottom: 10px;
+      color: black;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    #email {
+      font-style: italic;
+      font-size: 14pt;
+      margin-bottom: 20px;
+      color: black;
+    }
+
+    #icons {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    #icons img {
+      margin: 5px;
+    }
+
+    #buttons {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    #buttons button {
+      margin: 5px;
+      font-size: 10pt;
+      padding: 10px 20px;
+    }
+  </style>
+</head>
+<body>
+  <div id="header">
+    <div id="left-column">
+      <img src="personal photo.JPG" id="photo" alt="Personal Photo">
+      <div id="icons">
+        <a href="https://twitter.com/KexinYin5"><img src="twitter.png" alt="Twitter Icon" width="30" height="30"></a>
+        <a href="https://www.linkedin.com/in/kexin-yin-in-uk"><img src="linkedin.png" alt="LinkedIn Icon" width="30" height="30"></a>
+	<a href="https://www.researchgate.net/profile/Kexin-Yin-7"><img src="researchgate.png" alt="Researchgate Icon" width="30" height="30"></a>
+        <a href="https://fmh.hud.ac.uk"><img src="future metrology hub.png" alt="Future Metrology Hub Icon" width="30" height="30"></a>
+        
+      </div>
+    </div>
+    <div id="right-column">
+      <p><strong>Project 1:</strong> Digital twin-based in-line multi-objective process optimization for additive manufacturing.</p>
+      <p><strong> 1.</strong> Category theory-based generic digital twin framework for the in-line optimization</p>
+      <p><strong> 2.</strong> Machine learning-based in-situ anomaly detection for additive manufacturing</p>
+      <p><strong> 3.</strong> Machine learning-based multi-objective surrogate models between parameters and detection results</p>
+      <p><strong>Project 2:</strong> Median statistics-based optimization for the geometrical measurement</p>
+      <p><strong>1.</strong> On dealing with outliers in geometrical measurements</p>
+      <p><strong>2.</strong> Mathematical analysis of the rank-order statistics in multi-dimension</p>
+
+      <div id="buttons">
+        <button onclick="location.href='/'">Go Back</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
