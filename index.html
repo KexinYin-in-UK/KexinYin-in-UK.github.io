@@ -1,41 +1,128 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <!-- 1. Make it responsive -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-image: url("background.gif");
+      background-size: cover;
+    }
 
-  <title>Kexin Yin – Home</title>
+    #header {
+      display: flex;
+      align-items: center;
+      justify-content: center; /* Add this line */
+      height: 100vh; /* Add this line */
+    }
 
-  <!-- 2. Remove your <style>…</style> block here and instead link your external CSS: -->
-  <link rel="stylesheet" href="style.css">
+    #left-column {
+      flex: 2;
+      text-align: center;
+      padding: 0 20px;
+    }
+
+    #right-column {
+      flex: 3;
+      text-align: center;
+      padding: 0 20px;
+      display: flex; /* Add this line */
+      flex-direction: column; /* Add this line */
+      align-items: center; /* Add this line */
+      justify-content: center; /* Add this line */
+    }
+
+    #photo {
+      max-width: 100%;
+      border: 3px solid black;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      width: 70%;
+      height: auto;
+    }
+
+    #name {
+      font-size: 24pt;
+      font-weight: bold;
+      color: black;
+    }
+
+    #position {
+      font-size: 16pt;
+      margin-bottom: 20px;
+      color: black;
+    }
+
+    #abstract {
+      font-size: 14pt;
+      text-align: justify;
+      line-height: 1.8;
+      margin-bottom: 10px;
+      color: black;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    #email {
+      font-style: italic;
+      font-size: 14pt;
+      margin-bottom: 20px;
+      color: black;
+    }
+
+    #icons {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    #icons img {
+      margin: 5px;
+    }
+
+    #buttons {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    #buttons button {
+      margin: 5px;
+      font-size: 10pt;
+      padding: 10px 20px;
+    }
+  </style>
 </head>
 <body>
-  <!-- 3. Your existing #header wrapper stays the same -->
   <div id="header">
     <div id="left-column">
-      <!-- 4. Make sure your <img> has the id="photo" so our circular/outline/shadow rules apply -->
-      <img id="photo" src="personal photo.jpg" alt="Kexin Yin Portrait">
-
+      <img src="personal photo.jpg" id="photo" alt="Personal Photo">
       <div id="icons">
-        <!-- … your icon links … -->
+        <a href="https://twitter.com/KexinYin5"><img src="twitter.png" alt="Twitter Icon" width="30" height="30"></a>
+        <a href="https://www.linkedin.com/in/kexin-yin-in-uk"><img src="linkedin.png" alt="LinkedIn Icon" width="30" height="30"></a>
+	<a href="https://www.researchgate.net/profile/Kexin-Yin-7"><img src="researchgate.png" alt="Researchgate Icon" width="30" height="30"></a>
+        <a href="https://fmh.hud.ac.uk"><img src="future metrology hub.png" alt="Future Metrology Hub Icon" width="30" height="30"></a>
+        
       </div>
     </div>
-
     <div id="right-column">
       <h1 id="name">Kexin Yin</h1>
       <p id="position">PhD student in Future Metrology Hub, University of Huddersfield</p>
       <p id="email">kexin.yin@hud.ac.uk</p>
-
-      <p class="abstract">
-        <strong>About me:</strong> I am a first-year PhD student in in-situ measurement…
-      </p>
-      <p class="abstract">
-        <strong>Interests:</strong> Deep Learning, In-situ Detection…
+      <p id="abstract">
+        <strong>About me:</strong> I am a first-year PhD student in in-situ measurement and optimization based on AI with a solid educational background and industry experience.
+        I am interested in developing a career that transfers state-of-art research results into technological applications while maintaining my interest in developing new algorithms and software in the wider STEM field.
+        I am keen to use my professional knowledge and teamwork spirit to contribute to society and the industry.
+      <p id="abstract">
+        <strong>Interests:</strong> Deep Learning, In-situ Detection, Multi-objective Optimisation, Additive Manufacturing, Digital Twin
       </p>
 
       <div id="buttons">
-        <!-- … your buttons … -->
+        <button onclick="location.href='/phd-projects.html'">PhD Projects</button>
+        <button onclick="location.href='/experience.html'">Experience</button>
+        <button onclick="window.open('/Yin_Kexin.pdf', '_blank')">My CV</button>
+        <button onclick="window.open('https://flashlaserproject.eu', '_blank')">Europe Horizon FLASH</button>
+
       </div>
     </div>
   </div>
