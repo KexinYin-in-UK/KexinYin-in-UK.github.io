@@ -18,7 +18,7 @@
 <p class="p1">---</p>
 <p class="p2"><br></p>
 <p class="p1">&lt;h1&gt;About Me&lt;/h1&gt;</p>
-<p class="p1">&lt;p&gt;I am a first-year PhD student in industrial AI with a solid educational background and industry experience. I am interested in developing a career that transfers state-of-art research results into technological applications while maintaining my interest in developing new algorithms and software in the wider STEM field. I am keen to use my professional knowledge and teamwork spirit to contribute to society and the industry.&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;I am a fourth-year PhD student in industrial AI with a solid educational background and industry experience. I am interested in developing a career that transfers state-of-art research results into technological applications while maintaining my interest in developing new algorithms and software in the wider STEM field. I am keen to use my professional knowledge and teamwork spirit to contribute to society and the industry.&lt;/p&gt;</p>
 <p class="p2"><br></p>
 </body>
 </html>
